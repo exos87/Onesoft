@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcglogin"
+    >
+    <!--Pre pozadie layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/kuernieschematransparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitEnd"
+
+            android:src="@drawable/kurenieschema_transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+    </LinearLayout>
+    <!--Obsahuje all objekty na stranke-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <!--Logo objekt-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/logonesoft"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logoonesoft" />
+
+        </LinearLayout>
+        <!--New user a email objekty-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <EditText
+
+                android:text=""
+                android:hint="@string/zadajte_meno"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/edit_text_login_next"
+                android:background="@drawable/loginicon"
+                android:textSize="20dp"
+                android:textAlignment="center"
+
+                android:paddingLeft="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                />
+            <EditText
+
+                android:text=""
+                android:hint="@string/zadajte_emailovu_adresu"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/edit_text_register"
+                android:background="@drawable/emailicon"
+                android:textSize="20dp"
+                android:textAlignment="center"
+
+                android:layout_marginTop="5dp"
+                android:paddingLeft="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                />
+
+        </LinearLayout>
+        <!--Password objekty-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:hint="@string/zadajte_heslo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/edit_text_register_next"
+                android:background="@drawable/inputpasswordicon"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:paddingLeft="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                />
+            <EditText
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:hint="@string/zopakuj_heslo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/edit_text_login"
+                android:background="@drawable/repeatpasswordicon"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:paddingLeft="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                />
+
+        </LinearLayout>
+
+        <!--Prihlasenie a vytvrit novy ucet button objekt-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+
+            >
+            <Button
+                android:id="@+id/buttonlogin"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="@string/registerButton"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_add_color"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="20sp"
+                android:background="@drawable/buttonloginnext"
+                ></Button>
+
+
+
+        </LinearLayout>
+        <!--vyvynute text obbjekt-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <TextView
+
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-thin"
+                android:paddingLeft="70dp"
+                android:text="@string/develop"
+                android:textSize="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

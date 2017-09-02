@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@drawable/bcglogin"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/textslinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addinfo"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:paddingTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dodato_n_nastavenia"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:paddingTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_below="@+id/textslinear"
+            android:orientation="vertical"
+            android:id="@+id/bcklayoutsetup"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bckfirstloginset"
+            >
+            <TextView
+                android:contextClickable="true"
+                android:text="@string/vybran_zariadenie"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerzariadenietextview"
+                android:background="@drawable/pickdevicerect"
+                android:layout_margin="25dp"
+                android:textAlignment="center"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            >
+            <Button
+                android:id="@+id/buttonlogin"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="@string/pokracovat"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="20sp"
+                android:background="@drawable/buttonloginnext"
+                android:layout_gravity="center"
+                >
+
+            </Button>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:text="@string/develop"
+                android:textSize="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/kuernieschematransparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitEnd"
+        android:src="@drawable/kurenieschema_transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

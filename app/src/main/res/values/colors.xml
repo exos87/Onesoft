@@ -3,4 +3,23 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="editregistrationtextfield">#15144e</color>
+    <color name="buttonlogin_color">#34186D</color>
+    <color name="buttonlogin_color_log">#38669f</color>
+    <color name="change_cor">#fd0f1a</color>
+    <color name="prihlasenie_color">#FFFFFF</color>
+    <color name="vyvinute_pre_onesoft_s_r_o_color">#FEFEFE</color>
+    <color name="forgotpassword_color">#FEFEFE</color>
+
+    <color name="prihlasenie__color">#FFFFFF</color>
+    <color name="passwordlayer_color">#6DCFF6</color>
+    <color name="passwordiput_color">#88BBC4</color>
+    <color name="banner_color">#161616</color>
+    <color name="network_icon_color">#FFFFFF</color>
+    <color name="rounded_rectangle_2_color">#282828</color>
+    <color name="vnutrodat_color">#000000</color>
+    <color name="vyplsnprehodnoty_color">#0d1113</color>
+    <color name="vnutro_color_shaped_black">#88000000</color>
+    <color name="vnutro_value_color_stroke">#3ea51b</color>
+
 </resources>

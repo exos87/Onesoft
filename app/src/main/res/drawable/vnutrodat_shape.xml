@@ -1,0 +1,7 @@
+
+<!-- vnutrodat from your PSD file. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle" >
+	<solid android:color="@color/vnutro_color_shaped_black" />
+</shape>
+

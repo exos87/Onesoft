@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_custom_layout"
+    android:padding="2dp"
+    >
+    <LinearLayout
+        android:id="@+id/bcklayoutsetup"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="15"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="14"
+            android:weightSum="3"
+            android:gravity="center">
+            <TextView
+                android:contextClickable="true"
+                android:text="@string/parametre_na_zmenu_kurenie"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/zmenaHead"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+           android:weightSum="3"
+
+            >
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popuplayout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/cas_prog"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:id="@+id/changeTempKurenie"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popupparamcurrent"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/changeCasProgramKurenie"
+                android:textSize="10dp"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/changeTempKurenieChangeLayout"
+            >
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pickdevicerect"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:hint="Zmena"
+
+                android:id="@+id/changeTempKurenieChange"
+
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/secondRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    android:id="@+id/secondRowfirst"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/popuplayout"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/iadan_tep_priestoru"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:id="@+id/changeTempKureniePriestor"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/popupparamcurrent"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/changeZiadanaPriestoruKurenie"
+                        android:textSize="10dp"
+                        android:layout_weight="2"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/secondRowsecond"
+                    >
+                    <EditText
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pickdevicerect"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:hint="Zmena"
+
+                        android:id="@+id/changeTempKureniePriestorChange"
+
+                        android:layout_weight="2"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/threerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+
+                   >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/popuplayout"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/kurenie_Chod_Regulacie_change"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:id="@+id/kureniechangestopchod"
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                   <ToggleButton
+                    android:id="@+id/kurenieChodStopChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/check"
+                    android:layout_margin="10dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                  />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    <Button
+        android:id="@+id/ib_close"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_add_color"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="20sp"
+        android:background="@drawable/buttonloginnext"
+       android:layout_weight="1"
+        >
+    </Button>
+    <Button
+        android:id="@+id/acceptchange"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="@string/zmeni"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_add_color"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="20sp"
+        android:background="@drawable/buttonloginnext"
+        android:layout_weight="1"
+
+        >
+    </Button>
+</LinearLayout>
+
+</LinearLayout>
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

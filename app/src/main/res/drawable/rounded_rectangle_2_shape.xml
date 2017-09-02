@@ -1,0 +1,10 @@
+
+<!-- rounded_rectangle_2 from your PSD file. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle" >
+	<corners android:radius="25dp" />
+	<stroke android:color="#000000" android:width="2dp" />
+	<solid android:color="@color/rounded_rectangle_2_color" />
+	<gradient android:angle="225" android:type="linear" android:startColor="#37659f" android:endColor="#212d33" />
+</shape>
+

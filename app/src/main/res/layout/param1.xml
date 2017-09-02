@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Layaut kde definujem premenne-->
+    <LinearLayout
+        android:id="@+id/thirdlayoutvalues"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/vnutrodat_value_shape"
+        android:layout_weight="1"
+        android:layout_margin="3dp"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <!--Objekty pre zobrazovanie hodnout-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cas_prog_v"
+                android:textColor="#40a923"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:textSize="13dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fountainicon"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+
+                />
+            <TextView
+                android:id="@+id/casovyProgramVoda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/watermnozstvo"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_margin="8dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

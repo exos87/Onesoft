@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/vnutrodat_value_shape"
+    android:layout_weight="1"
+    android:weightSum="3"
+    android:layout_margin="3dp"
+    >
+    <!--Layout ktory obsahuje  objekty pre premenne-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <!--Objekty pre zobrazovanie hodnout-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chod_regu_uk"
+            android:textColor="#40a923"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:textSize="12dp"
+            />
+        <ImageView
+            android:id="@+id/kurenieStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
